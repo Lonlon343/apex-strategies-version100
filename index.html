@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX Strategies - Betriebswirtschaftliche Optimierung &amp; Kundenvermittlung</title>
+    <meta name="description"
+        content="APEX Strategies ist Ihr 24/7 Sparringspartner für KMU. Wir bieten kostenlose betriebswirtschaftliche Analysen und Partnervermittlung in den Bereichen Finanzierung, Steuern, Marketing, IT und mehr.">
+    <!-- Theme Script for anti-flicker -->
+    <script>
+        const storedTheme = localStorage.getItem('apex_theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="loader-content">
+            <img src="assets/logo.png" alt="Apex Strategies" class="loader-logo">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="APEX Strategies Logo">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html" class="active">Startseite</a>
+                <a href="about.html">Über uns</a>
+                <a href="services.html">Leistungen</a>
+                <a href="contact.html">Kontakt</a>
+                <button class="theme-toggle-btn" aria-label="Dark Mode umschalten">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Sheet -->
+    <div class="mobile-nav">
+        <button class="close-menu-btn" aria-label="Close Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <a href="index.html" class="active">Startseite</a>
+        <a href="about.html">Über uns</a>
+        <a href="services.html">Leistungen</a>
+        <a href="contact.html">Kontakt</a>
+        <button class="theme-toggle-btn" aria-label="Dark Mode umschalten" style="margin-top: 1rem;">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="vh-section" style="padding-top: 120px; position: relative; overflow: hidden;">
+            <div class="hero-banner-overflow">
+                <div class="hero-banner-track">
+                    <img src="assets/Bannerfoto.jpg" alt="Banner 1">
+                    <img src="assets/Bannerfoto 2.jpg" alt="Banner 2">
+                    <img src="assets/Bannerfoto 3.jpg" alt="Banner 3">
+                    <img src="assets/Bannerfoto 4.jpg" alt="Banner 4">
+                </div>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="hero-content animate-on-scroll">
+                    <h1 class="mb-sm">Wir geben Ihnen die <span class="text-accent">Freiheit</span>, sich auf Ihre
+                        Träume zu konzentrieren.</h1>
+                    <p class="subtitle mb-md" style="font-size: 1.25rem;">Zukunftssichere operative
+                        Entlastung für
+                        moderne KMUs. Wir übernehmen die betriebswirtschaftliche Optimierung, damit Sie skalieren
+                        können.</p>
+                    <a href="contact.html" class="btn btn-primary">Kostenlose Analyse anfragen</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section (Hook) -->
+        <section class="vh-section section-bg-alt">
+            <div class="container flex flex-col items-start">
+                <h2 class="mb-sm animate-on-scroll">80-90 % der Startups scheitern in den ersten 5 Jahren.</h2>
+                <p class="subtitle mb-md animate-on-scroll delay-100" style="max-width: 800px;">
+                    Fehlende Strukturen, steuerliche Ineffizienzen und unpassendes Marketing sind die Hauptgründe.
+                    APEX Strategies ist die Lösung: Ihr 24/7 Sparringspartner für nachhaltiges Wachstum und operative
+                    Exzellenz.
+                </p>
+                <!-- Image Integration -->
+                <div class="animate-on-scroll delay-200"
+                    style="width: 100%; max-width: 900px; margin-top: var(--spacing-); position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg);">
+                    <img src="assets/landing-page-foto.png" alt="APEX Strategies Team"
+                        style="width: 100%; height: auto; display: block; object-fit: cover;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Reasons for Failure Section -->
+        <section class="section">
+            <div class="container">
+                <div class="mb-lg animate-on-scroll">
+                    <h2>Warum Unternehmen scheitern</h2>
+                    <p class="subtitle">Die häufigsten Fallstricke auf dem Weg zur Skalierung</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+                    <div class="card animate-on-scroll delay-100"
+                        style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem; flex-direction: row;">
+                        <div class="card-icon" style="margin-bottom: 0; flex-shrink: 0; width: 40px; height: 40px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                                </path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 1.125rem; margin: 0;">Liquiditätsengpässe</h3>
+                    </div>
+                    <div class="card animate-on-scroll delay-200"
+                        style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem; flex-direction: row;">
+                        <div class="card-icon" style="margin-bottom: 0; flex-shrink: 0; width: 40px; height: 40px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                                </path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 1.125rem; margin: 0;">Managementfehler</h3>
+                    </div>
+                    <div class="card animate-on-scroll delay-300"
+                        style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem; flex-direction: row;">
+                        <div class="card-icon" style="margin-bottom: 0; flex-shrink: 0; width: 40px; height: 40px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                                </path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 1.125rem; margin: 0;">Branchenspezifische Fehler</h3>
+                    </div>
+                    <div class="card animate-on-scroll delay-100"
+                        style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem; flex-direction: row;">
+                        <div class="card-icon" style="margin-bottom: 0; flex-shrink: 0; width: 40px; height: 40px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                                </path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 1.125rem; margin: 0;">Bürokratie</h3>
+                    </div>
+                    <div class="card animate-on-scroll delay-200"
+                        style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem; flex-direction: row;">
+                        <div class="card-icon" style="margin-bottom: 0; flex-shrink: 0; width: 40px; height: 40px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                                </path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 1.125rem; margin: 0;">Fehlerhafte Steuerplanung</h3>
+                    </div>
+                    <div class="card animate-on-scroll delay-300"
+                        style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem; flex-direction: row;">
+                        <div class="card-icon" style="margin-bottom: 0; flex-shrink: 0; width: 40px; height: 40px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                                </path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 1.125rem; margin: 0;">Kundenwegfall</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="section">
+            <div class="container">
+                <div class="mb-lg animate-on-scroll">
+                    <h2>Unser Weg zum Erfolg</h2>
+                    <p class="subtitle">Ein klarer, datengetriebener 4-Schritte-Prozess</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item animate-on-scroll slide-left delay-100">
+                        <h3>1. Analyse</h3>
+                        <p>Kostenlose Bestandsaufnahme und Identifikation von Optimierungspotenzialen in Ihrem
+                            Unternehmen.</p>
+                    </div>
+                    <div class="timeline-item animate-on-scroll slide-left delay-200">
+                        <h3>2. Konzept</h3>
+                        <p>Entwicklung einer maßgeschneiderten Strategie basierend auf unseren 6 zentralen Säulen.</p>
+                    </div>
+                    <div class="timeline-item animate-on-scroll slide-left delay-300">
+                        <h3>3. Umsetzung</h3>
+                        <p>Vernetzung mit zertifizierten Experten und aktives Management der Implementierung.</p>
+                    </div>
+                    <div class="timeline-item animate-on-scroll slide-left delay-400">
+                        <h3>4. Controlling</h3>
+                        <p>Laufende Überwachung, Premium-Reporting und kontinuierliche Anpassung als 24/7
+                            Sparringspartner.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Teaser Section -->
+        <section class="section section-bg-alt">
+            <div class="container">
+                <div class="flex flex-col md:flex-row justify-between items-start mb-lg animate-on-scroll">
+                    <div>
+                        <h2>Unsere Leistungen</h2>
+                        <p class="subtitle">Ganzheitliche Optimierung aus einer Hand</p>
+                    </div>
+                    <a href="services.html" class="btn btn-outline" style="margin-top: 1rem;">Alle Leistungen
+                        ansehen</a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Service 1 -->
+                    <div class="card animate-on-scroll delay-100">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <h3>Finanzierung &amp; Investment</h3>
+                        <p class="mb-sm" style="flex-grow: 1;">Finanz- &amp; Businessplanerstellung, Finanzierungssuche
+                            &amp; Begleitung bei Bankgesprächen, Vermögensplanung</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="card animate-on-scroll delay-200">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Steuern &amp; Vermögensschutz</h3>
+                        <p class="mb-sm" style="flex-grow: 1;">Gestaltungsmodelle, Buchhaltung &amp; Aufstellung des
+                            passenden Steuerteams</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="card animate-on-scroll delay-300">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                </path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3>Marketing &amp; Vertrieb</h3>
+                        <p class="mb-sm" style="flex-grow: 1;">Individuelle Vertriebsstrategie, Webdesign &amp; laufende
+                            Betreuung, Marketing</p>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="card animate-on-scroll delay-100">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3>IT-Services</h3>
+                        <p class="mb-sm" style="flex-grow: 1;">IT-Beratung, Infrastruktur und laufende Betreuung</p>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="card animate-on-scroll delay-200">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Bau &amp; Immobilien</h3>
+                        <p class="mb-sm" style="flex-grow: 1;">Immobiliensuche &amp; Beratung, Bauplanung &amp;
+                            Umsetzung</p>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="card animate-on-scroll delay-300">
+                        <div class="card-icon" style="background-color: var(--text-primary); color: var(--accent);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 style="color: var(--text-primary);">Controlling (Premium)</h3>
+                        <p class="mb-sm" style="flex-grow: 1;">Laufende Überwachung der Kennzahlen, Risikoerkennung
+                            &amp; Maßnahmenermittlung</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section">
+            <div class="container animate-on-scroll">
+                <h2 class="mb-sm">Bereit für den nächsten Schritt?</h2>
+                <p class="subtitle mb-md" style="max-width: 600px;">
+                    Lassen Sie uns gemeinsam herausfinden, wie wir Ihr Unternehmen profitabler und effizienter
+                    aufstellen können.
+                </p>
+                <a href="contact.html" class="btn btn-primary"
+                    style="font-size: 1.125rem; padding: 1.25rem 2.5rem;">Jetzt kostenlose Analyse anfragen</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3">
+                <div class="mb-md">
+                    <a href="index.html" class="footer-logo d-block">
+                        <img src="assets/logo.png" alt="APEX Strategies Logo">
+                    </a>
+                    <p>Ihr 24/7 Sparringspartner für nachhaltiges Wachstum und operative Exzellenz.</p>
+                </div>
+                <div>
+                    <h3 class="mb-sm" style="color: #fff; font-size: 1.25rem;">Links</h3>
+                    <ul class="flex flex-col gap-xs">
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="services.html">Leistungen</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-sm" style="color: #fff; font-size: 1.25rem;">Kontakt</h3>
+                    <ul class="flex flex-col gap-xs">
+                        <li>
+                            <p>Wallstr. 31</p>
+                        </li>
+                        <li>
+                            <p>46535 Dinslaken</p>
+                        </li>
+                        <li><a href="mailto:info@apex-strategies.de">info@apex-strategies.de</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 APEX Strategies UG (haftungsbeschränkt). Alle Rechte vorbehalten.</p>
+                <div class="flex gap-md">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                    <a href="#">AGB</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

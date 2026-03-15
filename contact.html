@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - APEX Strategies</title>
+    <meta name="description"
+        content="Nehmen Sie Kontakt mit APEX Strategies auf. Starten Sie Ihre kostenlose Analyse und Optimierung Ihres Unternehmens.">
+    <!-- Theme Script for anti-flicker -->
+    <script>
+        const storedTheme = localStorage.getItem('apex_theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="APEX Strategies Logo">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Startseite</a>
+                <a href="about.html">Über uns</a>
+                <a href="services.html">Leistungen</a>
+                <a href="contact.html" class="active">Kontakt</a>
+                <button class="theme-toggle-btn" aria-label="Dark Mode umschalten">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Sheet -->
+    <div class="mobile-nav">
+        <button class="close-menu-btn" aria-label="Close Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <a href="index.html">Startseite</a>
+        <a href="about.html">Über uns</a>
+        <a href="services.html">Leistungen</a>
+        <a href="contact.html" class="active">Kontakt</a>
+        <button class="theme-toggle-btn" aria-label="Dark Mode umschalten" style="margin-top: 1rem;">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
+
+    <main>
+        <!-- Contact Section -->
+        <section class="vh-section" style="padding-top: 120px;">
+            <div class="container animate-on-scroll">
+                <div class="mb-lg">
+                    <h1 class="mb-xs">Kontakt</h1>
+                    <p class="subtitle" style="font-size: 1.25rem;">Starten Sie jetzt Ihre kostenlose
+                        betriebswirtschaftliche Analyse.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-lg" style="gap: var(--spacing-xl);">
+
+                    <!-- Left Side: Info -->
+                    <div class="flex flex-col gap-md">
+                        <div>
+                            <h2 class="mb-sm">Wir sind direkt für Sie da.</h2>
+                            <p class="mb-sm">
+                                Kein langes Warten, keine Chatbots. Hinterlassen Sie uns einfach Ihre Eckdaten und Ihr
+                                Anliegen, und wir melden uns zeitnah bei Ihnen für ein erstes unverbindliches
+                                Potenzial-Gespräch.
+                            </p>
+                        </div>
+
+                        <div class="card" style="background-color: var(--bg-secondary); border: none;">
+                            <h3 class="mb-sm">Unternehmenssitz</h3>
+                            <div class="flex items-start gap-sm mb-xs">
+                                <svg style="margin-top: 4px; flex-shrink: 0;" xmlns="http://www.w3.org/2000/svg"
+                                    width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <div>
+                                    <p class="font-medium" style="color: var(--text-primary);">APEX Strategies UG
+                                        (haftungsbeschränkt)</p>
+                                    <p>Wallstr. 31</p>
+                                    <p>46535 Dinslaken</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="background-color: var(--bg-secondary); border: none;">
+                            <h3 class="mb-sm">Direkter Draht</h3>
+                            <div class="flex flex-col gap-sm">
+                                <a href="mailto:info@apex-strategies.de" class="flex items-center gap-sm"
+                                    style="color: var(--text-primary);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    <span class="hover:text-accent transition-colors">info@apex-strategies.de</span>
+                                </a>
+                                <a href="tel:+490000000000" class="flex items-center gap-sm"
+                                    style="color: var(--text-primary);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                        </path>
+                                    </svg>
+                                    <span class="hover:text-accent transition-colors">+49 (0) 123 456789</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Form -->
+                    <div class="card" style="box-shadow: var(--shadow-md);">
+                        <h3 class="mb-md">Schreiben Sie uns Ihr Anliegen</h3>
+                        <form action="#" method="POST"
+                            onsubmit="event.preventDefault(); alert('Vielen Dank für Ihre Nachricht. Wir werden uns in Kürze bei Ihnen melden.');">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-control"
+                                    placeholder="Max Mustermann" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company" class="form-label">Unternehmen</label>
+                                <input type="text" id="company" name="company" class="form-control"
+                                    placeholder="Muster GmbH">
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-sm"
+                                style="margin-bottom: var(--spacing-md);">
+                                <div class="form-group" style="margin-bottom: 0;">
+                                    <label for="email" class="form-label">E-Mail Adresse</label>
+                                    <input type="email" id="email" name="email" class="form-control"
+                                        placeholder="max@beispiel.de" required>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0;">
+                                    <label for="phone" class="form-label">Telefon</label>
+                                    <input type="tel" id="phone" name="phone" class="form-control"
+                                        placeholder="+49 123 456789">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="need" class="form-label">Ich interessiere mich primär für:</label>
+                                <!-- Custom styling applied to select matches form-control -->
+                                <select id="need" name="need" class="form-control"
+                                    style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%231A1A1A%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1rem top 50%; background-size: 0.65rem auto;">
+                                    <option value="analyse">Kostenlose Potenzialanalyse</option>
+                                    <option value="finanzen">Finanzierung &amp; Investment</option>
+                                    <option value="steuern">Steuern &amp; Vermögensschutz</option>
+                                    <option value="marketing">Marketing &amp; Vertrieb</option>
+                                    <option value="it">IT-Services</option>
+                                    <option value="immobilien">Bau &amp; Immobilien</option>
+                                    <option value="controlling">Premium Controlling (CFO Service)</option>
+                                    <option value="sonstiges">Sonstiges</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Ihre Nachricht</label>
+                                <textarea id="message" name="message" class="form-control"
+                                    placeholder="Beschreiben Sie kurz Ihre aktuelle Herausforderung oder Ihr Ziel..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Nachricht senden</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3">
+                <div class="mb-md">
+                    <a href="index.html" class="footer-logo d-block">
+                        <img src="assets/logo.png" alt="APEX Strategies Logo">
+                    </a>
+                    <p>Ihr 24/7 Sparringspartner für nachhaltiges Wachstum und operative Exzellenz.</p>
+                </div>
+                <div>
+                    <h3 class="mb-sm" style="color: #fff; font-size: 1.25rem;">Links</h3>
+                    <ul class="flex flex-col gap-xs">
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="services.html">Leistungen</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-sm" style="color: #fff; font-size: 1.25rem;">Kontakt</h3>
+                    <ul class="flex flex-col gap-xs">
+                        <li>
+                            <p>Wallstr. 31</p>
+                        </li>
+                        <li>
+                            <p>46535 Dinslaken</p>
+                        </li>
+                        <li><a href="mailto:info@apex-strategies.de">info@apex-strategies.de</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 APEX Strategies UG (haftungsbeschränkt). Alle Rechte vorbehalten.</p>
+                <div class="flex gap-md">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                    <a href="#">AGB</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

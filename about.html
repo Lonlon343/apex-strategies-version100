@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über uns - APEX Strategies</title>
+    <meta name="description"
+        content="Lernen Sie APEX Strategies kennen. Wir sind Ihr 24/7 Sparringspartner für operative Entlastung und unternehmerischen Erfolg.">
+    <!-- Theme Script for anti-flicker -->
+    <script>
+        const storedTheme = localStorage.getItem('apex_theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="APEX Strategies Logo">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Startseite</a>
+                <a href="about.html" class="active">Über uns</a>
+                <a href="services.html">Leistungen</a>
+                <a href="contact.html">Kontakt</a>
+                <button class="theme-toggle-btn" aria-label="Dark Mode umschalten">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Sheet -->
+    <div class="mobile-nav">
+        <button class="close-menu-btn" aria-label="Close Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <a href="index.html">Startseite</a>
+        <a href="about.html" class="active">Über uns</a>
+        <a href="services.html">Leistungen</a>
+        <a href="contact.html">Kontakt</a>
+        <button class="theme-toggle-btn" aria-label="Dark Mode umschalten" style="margin-top: 1rem;">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
+
+    <main>
+        <!-- Combined About Header & Mission -->
+        <section class="vh-section" style="padding-top: 120px;">
+            <div class="container animate-on-scroll">
+                <div class="mb-lg">
+                    <h1 class="mb-sm">Wer wir sind.</h1>
+                    <p class="subtitle" style="max-width: 700px; font-size: 1.25rem;">
+                        APEX Strategies steht für Integrität, Umsetzungsstärke und nachhaltige unternehmerische Lösungen
+                        für
+                        KMUs im DACH-Raum.
+                    </p>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-lg items-start">
+                    <div class="animate-on-scroll flex-1">
+                        <h2 class="mb-sm">Ihr 24/7 Sparringspartner</h2>
+                        <p class="mb-sm">
+                            Wir glauben daran, dass Unternehmer sich auf ihre Kernkompetenzen und Visionen konzentrieren
+                            sollten. Zu oft werden sie jedoch durch operative Herausforderungen, steuerliche Komplexität
+                            und
+                            ineffiziente Prozesse ausgebremst.
+                        </p>
+                        <p class="mb-md">
+                            Unsere Mission ist es, genau diese Last von Ihren Schultern zu nehmen. Als Ihr strategischer
+                            Partner bieten wir Ihnen nicht nur eine tiefgehende Analyse Ihres Ist-Zustands, sondern ein
+                            handfestes Konzept und die konkrete Vermittlung an unser geprüftes Expertennetzwerk.
+                        </p>
+                        <ul class="flex flex-col gap-sm">
+                            <li class="flex items-start gap-xs">
+                                <svg style="margin-top: 4px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Absolute Transparenz</span>
+                            </li>
+                            <li class="flex items-start gap-xs">
+                                <svg style="margin-top: 4px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Maßgeschneiderte Konzepte</span>
+                            </li>
+                            <li class="flex items-start gap-xs">
+                                <svg style="margin-top: 4px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Messbare Ergebnisse</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="animate-on-scroll delay-200 flex-1 w-full relative">
+                        <div class="img-placeholder" style="height: 500px; width: 100%;">
+                            <!-- Image placeholder -->
+                            <div
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.3; filter: grayscale(1);">
+                                <img src="assets/logo.png" alt="APEX icon" style="height: 80px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="section section-bg-alt">
+            <div class="container animate-on-scroll">
+                <h2 class="mb-sm">Ihr Ansprechpartner</h2>
+                <p class="subtitle mb-lg" style="max-width: 600px;">
+                    Lerne die Köpfe hinter APEX Strategies kennen. Wir stehen für direkten Kontakt und persönliche
+                    Betreuung.
+                </p>
+
+                <div class="flex">
+                    <div class="card" style="max-width: 400px; padding: var(--spacing-md);">
+                        <div class="img-placeholder mb-sm"
+                            style="height: 250px; border-radius: var(--radius-sm); width: 100%;">
+                            <!-- Portrait Placeholder -->
+                            <svg style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #CBD5E1;"
+                                xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="mb-xs">Fynn Gerstung</h3>
+                        <p class="text-accent mb-sm font-semibold">Geschäftsführer / Gründer</p>
+                        <p style="font-size: 0.95rem;">
+                            Als Sparringspartner für Unternehmer liegt mein Fokus auf der Optimierung operativer
+                            Abläufe. Mein Ziel ist es, unseren Kunden durch strategische Beratung und ein starkes
+                            Partnernetzwerk zu nachhaltigem Erfolg zu verhelfen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section text-center">
+            <div class="container animate-on-scroll">
+                <h2 class="mb-sm">Lassen Sie uns über Ihre Ziele sprechen</h2>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem;">Kontakt aufnehmen</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3">
+                <div class="mb-md">
+                    <a href="index.html" class="footer-logo d-block">
+                        <img src="assets/logo.png" alt="APEX Strategies Logo">
+                    </a>
+                    <p>Ihr 24/7 Sparringspartner für nachhaltiges Wachstum und operative Exzellenz.</p>
+                </div>
+                <div>
+                    <h3 class="mb-sm" style="color: #fff; font-size: 1.25rem;">Links</h3>
+                    <ul class="flex flex-col gap-xs">
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="services.html">Leistungen</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-sm" style="color: #fff; font-size: 1.25rem;">Kontakt</h3>
+                    <ul class="flex flex-col gap-xs">
+                        <li>
+                            <p>Wallstr. 31</p>
+                        </li>
+                        <li>
+                            <p>46535 Dinslaken</p>
+                        </li>
+                        <li><a href="mailto:info@apex-strategies.de">info@apex-strategies.de</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 APEX Strategies UG (haftungsbeschränkt). Alle Rechte vorbehalten.</p>
+                <div class="flex gap-md">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                    <a href="#">AGB</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
